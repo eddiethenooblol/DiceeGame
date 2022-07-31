@@ -1,7 +1,7 @@
-var randomNumber1 = 2;
+var randomNumber1 = Math.floor(Math.random()*6)+1;
 document.querySelector(".img1").setAttribute("src", "images/dice" + randomNumber1 + ".png");
 
-var randomNumber2 = 6;
+var randomNumber2 = Math.floor(Math.random()*6)+1;
 document.querySelector(".img2").setAttribute("src", "images/dice" + randomNumber2 + ".png");
 
 if(randomNumber1 === randomNumber2){
@@ -17,10 +17,7 @@ else{
 }
 /*
 var randomDiceImage = "dice" + randomNumber1 + ".png";
-
 var randomImageSource = "images/" + randomDiceImage;
-
 var image1 = document.querySelectorAll("img")[0];
-
 image1.setAttribute("src", randomImageSource);
 */
